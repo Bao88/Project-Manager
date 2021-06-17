@@ -19,11 +19,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // PostgreSQL
 const pool = new Pool({
-    user: process.env.QOVERY_DATABASE_MY_POSTGRESQL_3498225_USERNAME,
-    host: process.env.QOVERY_DATABASE_MY_POSTGRESQL_3498225_HOST,
-    database: process.env.QOVERY_DATABASE_MY_POSTGRESQL_3498225_DATABASE,
-    password: process.env.QOVERY_DATABASE_MY_POSTGRESQL_3498225_PASSWORD,
-    port: process.env.QOVERY_DATABASE_MY_POSTGRESQL_3498225_PORT,
+    user: process.env.QOVERY_DATABASE_MY_PSQL_USERNAME,
+    host: process.env.QOVERY_DATABASE_MY_PSQL_HOST,
+    database: process.env.QOVERY_DATABASE_MY_PSQL_DATABASE,
+    password: process.env.QOVERY_DATABASE_MY_PSQL_PASSWORD,
+    port: process.env.QOVERY_DATABASE_MY_PSQL_PORT,
 });
 
 app.get('/', function (req, res, next) {
